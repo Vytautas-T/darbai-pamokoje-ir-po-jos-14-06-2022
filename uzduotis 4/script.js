@@ -12,13 +12,13 @@ window.onload = function() {
 function nelyginiaiSkaiciai(skaicius1,skaicius2) {
     const masyvas = [];
     for (let i = skaicius1; i <= skaicius2; i++) {
-        if (arLyginiai(i)) {
+        if (arNeLyginis(i)) {
             masyvas.push(i);
         }
     }
     return masyvas;
 }
 
-function arLyginiai(x) {
+function arNeLyginis(x) {
     return x % 2 === 1;
 }
