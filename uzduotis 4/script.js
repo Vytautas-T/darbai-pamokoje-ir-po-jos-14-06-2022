@@ -1,11 +1,17 @@
 window.onload = function() {
-    const a = nelyginiaiSkaiciai();
+    let x = 509;
+    let y = 603;
+    let x1 = 100;
+    let y1 = 104;
+    const a = nelyginiaiSkaiciai(x1,y1);
+    const b = nelyginiaiSkaiciai(x,y);
     console.log(a)
+    console.log(b)
 }
 
-function nelyginiaiSkaiciai() {
+function nelyginiaiSkaiciai(skaicius1,skaicius2) {
     const masyvas = [];
-    for (let i = 107; i <= 309; i++) {
+    for (let i = skaicius1; i <= skaicius2; i++) {
         if (arLyginiai(i)) {
             masyvas.push(i);
         }
