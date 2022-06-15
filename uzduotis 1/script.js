@@ -15,5 +15,5 @@ return suma;
 
 }
 function dalyba (skaicius){
-    return masyvoSuma(skaicius) / skaicius.length
+    return masyvoSuma(skaicius) / skaicius.length;
 }
